@@ -46,7 +46,7 @@ def index():
             new_blog = Blog(blog_title, blog)
             db.session.add(new_blog)
             db.session.commit()
-            return render_template('individual.html', title=blog_title, body=blog)
+            return redirect('/blog?id={0}'.format(new_blog.id))
     
     blogs = Blog.query.all()
 
