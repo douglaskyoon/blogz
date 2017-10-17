@@ -7,7 +7,11 @@
                 color: red;
             }
         </style>
-        <a href="/">Main Blog Page</a> <a href="/newpost">Add a blog entry</a>
+        <a href="/">Main Blog Page</a> 
+        <a href="/newpost">Add a blog entry</a>
+        <a href='/blog'>All Blogs</a>
+        <a href="/logout">logout</a>
+
     </head>
 <body>
 
@@ -18,8 +22,9 @@
     {% endfor %}
     
 {% endwith %}
-    {% block content %}
-    {% endblock %}
+{% block content %}
+{% endblock %}
+
 
 </body>
 </html>
