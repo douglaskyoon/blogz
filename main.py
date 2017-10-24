@@ -68,7 +68,7 @@ def signup():
         else:
             return "<h1>Duplicate user</h1>"
 
-    return render_template('blog.html')
+    return render_template('signup.html')
 
 @app.route('/logout')
 def logout():
